@@ -4,4 +4,4 @@ A simple example of docker container to create jupyter notebooks with custom ker
 
 ## Run
 
-```docker-compose --build```
+```docker-compose up --build```
