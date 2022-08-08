@@ -1,0 +1,13 @@
+services:
+  jupyter: 
+    build: .
+    container_name: my_jupyter_setup
+    #command: 
+    #  - jupyter notebook 
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/home/jovyan/notebooks
+      - ./datasets:/home/jovyan/datasets
